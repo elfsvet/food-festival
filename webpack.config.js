@@ -16,6 +16,13 @@ module.exports = {
         // the file name is going to be main.bundle.js
         filename: '[name].bundle.js'
     },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, './'),
+        },
+        compress: true,
+        port: 8080,
+    },
     module: {
         rules: [
             {
